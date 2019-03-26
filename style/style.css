@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+html, body
+{
+  font-family: 'Open Sans', sans-serif;
+  margin:0px;
+  padding:0px;
+  background-color:#333;
+}
+
+#container
+{
+  background-color:#c3c3c3;
+  width:820px;
+  margin:0px auto;
+  padding:10px;
+}
+
+#container nav
+{
+  width:800px;
+  padding:inherit;
+  margin:10px;
+  padding:0px;
+  background-color:#333;
+}
+
+#container nav ul
+{
+  display:flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  list-style: none;
+  margin:0px;
+  padding:0px;
+}
+
+#container nav ul li
+{
+  width:225px;
+  margin:10px;
+  text-align: center;
+}
+
+#container nav ul li a
+{
+  color:#fff;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+#container nav ul li a:hover
+{
+  color:#009999;
+}
+
+#container section
+{
+  background-color:#fff;
+  width:800px;
+  height:auto;
+  margin:0px auto 24px auto;
+}
+
+#container #generatePolkaDots,
+#container #resetChart,
+#container #startAnim,
+#container #stopAnim
+{
+  margin:10px auto 20px auto;
+  width:225px;
+  background-color:#666;
+  box-shadow:5px 5px 5px #000;
+  font-size:12pt;
+  font-weight: bold;
+  padding:4px;
+  text-align: center;
+  cursor:pointer;
+}
+
+#container #startAnim,
+#container #stopAnim
+{
+  display:inline-block;
+}
+
+#container #generatePolkaDots a,
+#container #resetChart a,
+#container #startAnim a,
+#container #stopAnim a
+{
+  color:#eee;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+#container #generatePolkaDots:hover,
+#container #resetChart:hover,
+#container #startAnim:hover,
+#container #stopAnim:hover
+{
+  opacity:0.9;
+}
+
+#container span
+{
+  font-weight:700;
+}
+
+/* beatBox */
+#container #section2,
+#container #section3
+{
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+
+#container #section2 a
+{
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#container #section2 #hiHat,
+#container #section2 #crashCymbal,
+#container #section2 #snareDrum,
+#container #section2 #bassDrum,
+#container #section2 #DeepBassDrum
+{
+  width:300px;
+  height:300px;
+  margin:5px;
+  text-align: center;
+  font-size:18pt;
+  line-height: 300px;
+  color:#000;
+  border-radius: 40px;
+}
+
+#container #section2 #hiHat:hover,
+#container #section2 #crashCymbal:hover,
+#container #section2 #snareDrum:hover,
+#container #section2 #bassDrum:hover,
+#container #section2 #DeepBassDrum:hover
+{
+  color:#999;
+}
+
+
+#container #section2 #hiHat { background-color:yellow; }
+#container #section2 #crashCymbal { background-color:orange; }
+#container #section2 #snareDrum { background-color:#c3c3c3; }
+#container #section2 #bassDrum { background-color:green; }
+#container #section2 #DeepBassDrum { background-color:#009999; }
+
+/* map directions */
+#container #section4 { position:relative; }
+
+#container #section4 #loadingAnimation
+{
+  position:absolute;
+  z-index:3;
+  width:100%;
+  height:100%;
+  background-color: #fff; /*rgb(255, 255, 255);*/
+  color:#eee;
+  visibility: visible;
+}
+
+#container #section4 #loadingAnimation div
+{
+  position:absolute;
+  left:0;
+  right:0;
+  top:275px;
+  width:auto;
+  color:#000;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18pt;
+  text-transform: uppercase;
+}
+
+#container #section4 #loadingAnimation div img
+{
+  padding:0px;
+  margin:0px;
+  width:20%;
+  height:20%;
+}
+
+#container #section4 #floatingPanel
+{
+  position: absolute;
+  top: 10px;
+  left: 25%;
+  z-index: 5;
+  background-color: #eee;
+  padding: 5px;
+  border: 1px solid #999;
+  text-align: center;
+  line-height: 30px;
+  padding-left: 10px;
+  box-shadow: 1px 1px 5px #ccc;
+}
+
+#container #section4 #map
+{
+  height: 800px;
+  width: 800px;
+}
+
+/* image slideshow */
+#container #section5
+{
+  position:relative;
+  padding-bottom:40px;
+}
+
+#container #section5 .imageContainer
+{
+  width:500px;
+  margin:0px auto;
+  background-color: #000;
+}
+
+#container #section5 #slideControls
+{
+  width:550px;
+  margin:0px auto;
+  padding:0px;
+  text-align: center;
+}
+
+#container #section5 .imageContainer ul
+{
+  margin:0px;
+  padding:0px;
+  list-style-type: none;
+  display: table-cell;
+  vertical-align: middle;
+  width:500px;
+}
+
+#container #section5 .imageContainer ul li
+{
+  display:block;
+  width:500px;
+  height:375px;
+  background-color:#eee;
+}
+
+#container #section5 .imageContainer ul li img
+{
+  width:100%;
+}
+
+#container h2, h4
+{
+  text-align: center;
+  font-weight: bold;
+  font-size:16pt;
+  color:#009933;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+#container h4
+{
+  font-weight: normal;
+  font-size:12pt;
+  color:#cc0000;
+}
+
+#container header,
+#container footer
+{
+  margin:10px;
+  padding:10px;
+  background-color:#000;
+  color:#eee;
+  text-align: center;
+}

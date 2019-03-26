@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Reggie Galang - GWDA243 : FINAL</title>
+    <link href="style/style.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <header>
+        GWDA243 : FINAL PROJECT - 3/21/17<br/>
+        by Reggie Galang
+      </header>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Probability Chart</a></li>
+          <li><a href="beatBox.html">BeatBox</a></li>
+          <li><a href="polkaDot.html">Polka Dot Generator</a></li>
+          <li><a href="#">Map Directions</a></li>
+          <li><a href="slideShow.html">Slideshow</a></li>
+        </ul>
+      </nav>
+
+
+      <h2>Map Directions</h2>
+      <h4>Select a City of Origin and your City of Destination<br/>
+        Total Distance: <span id="totalDistance"></span></h4>
+
+      <section id="section4">
+        <div id="loadingAnimation">
+          <div>Please be Patient while Map loads...<br/>
+            <img src="images/loading-gears-animation.gif"/>
+          </div>
+        </div>
+
+        <div id="floatingPanel">
+          <b>Start: </b>
+          <select id="start">
+            <option value="currentLocation">Current Location</option>
+            <option value="New York, ny">New York, NY</option>
+            <option value="South Beach, FL">South Beach, FL</option>
+            <option value="chicago, il">Chicago, IL</option>
+            <option value="st louis, mo">St Louis, MO</option>
+            <option value="joplin, mo">Joplin, MO</option>
+            <option value="oklahoma city, ok">Oklahoma City, OK</option>
+            <option value="amarillo, tx">Amarillo, TX</option>
+            <option value="gallup, nm">Gallup, NM</option>
+            <option value="flagstaff, az">Flagstaff, AZ</option>
+            <option value="winona, az">Winona, AZ</option>
+            <option value="kingman, az">Kingman, AZ</option>
+            <option value="las vegas, nv">Las Vegas, NV</option>
+            <option value="joshua tree, ca">Joshua Tree, CA</option>
+            <option value="barstow, ca">Barstow, CA</option>
+            <option value="san bernardino, ca">San Bernardino, CA</option>
+            <option value="los angeles, ca">Los Angeles, CA</option>
+            <option value="portland, or">Portland, OR</option>
+            <option value="seattle, wa">Seattle, WA</option>
+          </select>
+
+          <b>End: </b>
+          <select id="end">
+             <option value="currentLocation">Current Location</option>
+             <option value="New York, ny">New York, NY</option>
+             <option value="South Beach, FL">South Beach, FL</option>
+             <option value="chicago, il">Chicago, IL</option>
+             <option value="st louis, mo">St Louis, MO</option>
+             <option value="joplin, mo">Joplin, MO</option>
+             <option value="oklahoma city, ok">Oklahoma City, OK</option>
+             <option value="amarillo, tx">Amarillo, TX</option>
+             <option value="gallup, nm">Gallup, NM</option>
+             <option value="flagstaff, az">Flagstaff, AZ</option>
+             <option value="winona, az">Winona, AZ</option>
+             <option value="kingman, az">Kingman, AZ</option>
+             <option value="las vegas, nv">Las Vegas, NV</option>
+             <option value="joshua tree, ca">Joshua Tree, CA</option>
+             <option value="barstow, ca">Barstow, CA</option>
+             <option value="san bernardino, ca">San Bernardino, CA</option>
+             <option value="los angeles, ca">Los Angeles, CA</option>
+             <option value="portland, or">Portland, OR</option>
+             <option value="seattle, wa">Seattle, WA</option>
+          </select>
+        </div>
+
+        <!--- canvas for map API -->
+        <div id="map"></div>
+
+      </section>
+
+
+      <footer>
+        GWDA243 : FINAL PROJECT - 3/21/17<br/>
+        by Reggie Galang
+      </footer>
+    </div>
+
+    <script src="js/mapDirections.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_j8JAi0b-c9s55a_MGtTfYLzZymswB6Q&callback=initMap"></script>
+  </body>
+</html>
